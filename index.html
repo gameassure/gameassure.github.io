@@ -25,16 +25,16 @@
 				<!-- Header -->
 					<header id="header" class="alt">
 						<h1><a class="logo" href="index.html">Game Assure</a></h1>
-						<a id="cta" href="javascript:launch_subscribe()" class="button special">Trade In</a>
+						<a id="cta" href="#" class="button special">Trade In</a>
 						<nav id="nav">
 							<ul>
 								<li class="special">
 									<a href="#menu" class="menuToggle"><span>Menu</span></a>
 									<div id="menu">
 										<ul>
-											<li><a href="javascript:launch_subscribe()" class="button special">Start a Trade-In</a></li>
-											<li><a href="javascript:launch_subscribe()">Frequently Asked Questions</a></li>
-											<li><a href="javascript:launch_subscribe()">Support</a></li>
+											<li><a href="#" class="button special">Start a Trade-In</a></li>
+											<li><a href="#">Frequently Asked Questions</a></li>
+											<li><a href="#">Support</a></li>
 										</ul>
 									</div>
 								</li>
@@ -49,7 +49,7 @@
 							<h2 class="logo">Game Assure</h2>
 							<p>Say "Bye-bye" to your family's forgotten video&nbsp;games, <br />and "hello" to something they'll actually use.</p>
 							<ul class="actions">
-								<li><a href="javascript:launch_subscribe()" class="button special">Trade In Used Games</a></li>
+								<li><a href="#" class="button special">Trade In Used Games</a></li>
 							</ul>
 						</div>
 						<a href="#one" class="more scrolly">Learn More</a>
@@ -138,8 +138,8 @@
 								<!-- ><p>Aliquam ut ex ut augue consectetur interdum endrerit imperdiet amet eleifend fringilla.</p> -->
 							</header>
 							<ul class="actions vertical">
-								<li><a href="javascript:launch_subscribe()" class="button fit special">Trade In</a></li>
-								<li><a href="javascript:launch_subscribe()" class="button fit">Questions?</a></li>
+								<li><a href="#" class="button fit special">Trade In</a></li>
+								<li><a href="#" class="button fit">Questions?</a></li>
 							</ul>
 						</div>
 					</section>
@@ -147,13 +147,13 @@
 				<!-- Footer -->
 					<footer id="footer">
 						<!-- ><ul class="icons">
-							<li><a href="javascript:launch_subscribe()" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="javascript:launch_subscribe()" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-							<li><a href="javascript:launch_subscribe()" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
-							<li><a href="javascript:launch_subscribe()" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+							<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
 						</ul> -->
 						<ul class="copyright">
-							<li>Follow us: &nbsp;<a href="javascript:launch_subscribe()" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+							<li>Follow us: &nbsp;<a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
 							
 							<li>&copy; 2016 Game Assure, LLC</li><li>Design: <a href="http://html5up.net">HTML5&nbsp;UP</a></li>
 						</ul>
@@ -170,7 +170,17 @@
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
 
-<script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">function launch_subscribe() { require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us14.list-manage.com","uuid":"569c0e6a90d36d61a07cf3f40","lid":"3e2c6f1944"}) }) }</script>
+<script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
+
+<script>
+function showMailingPopUp() {
+    require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us11.list-manage.com","uuid":"569c0e6a90d36d61a07cf3f40","lid":"3e2c6f1944"}) })
+    document.cookie = "MCEvilPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
+};
+
+$('.button').click(function() { console.log ('click'); showMailingPopUp();});
+//.each(function (i) { console.log(this); this.click(function() { console.log ('click'); showMailingPopUp();}) });
+</script>
 
 	</body>
 </html>
